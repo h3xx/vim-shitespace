@@ -5,7 +5,7 @@
 "
 " Description:
 "
-" Instantly whitespace.
+" Instantly spot bothersome bad whitespace.
 "
 " Instructions:
 "
@@ -25,10 +25,10 @@
 "
 " Cookbook:
 "
-" If you hate tabs, stick this in your ~/.vimrc:
+" If you don't like tabs, stick this in your ~/.vimrc:
 " let g:shitespaceMatch = '/\s\+$\|\t\+/'
 "
-" If you hate all mixed spaces-and-tabs, stick this in your ~/.vimrc:
+" If you don't like mixed spaces-and-tabs, stick this in your ~/.vimrc:
 " let g:shitespaceMatch = '/\s\+$\| \+\t\+\|\t\+ \+/'
 "
 " Updated: 2021-01-18
