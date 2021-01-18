@@ -6,6 +6,8 @@ Highlights all the bad whitespace in your files:
 - Spaces followed by tabs
 - Mixed tabs and spaces (if configured)
 
+![example highlighting](../images/example.png)
+
 ## Installation
 
 Vim 8+:
