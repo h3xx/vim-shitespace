@@ -1,5 +1,15 @@
 # Vim Shitespace
 
+> **shitespace:** Unwanted or unintended whitespace, commonly found when
+> programming but also in prose.
+>
+> *I spent ages tidying up that file for you, next time try leaving out the
+> shitespace when you write it*
+
+-- [Urban Dictionary](https://www.urbandictionary.com/define.php?term=shitespace)
+
+Or, if anyone asks, it's short for "show whitespace." ;-)
+
 Highlights all the bad whitespace in your files:
 
 - Whitespace at the end of lines
@@ -9,6 +19,8 @@ Highlights all the bad whitespace in your files:
 ![example highlighting](../images/example.png)
 
 ## Installation
+
+Shitespace is on by default. So all you have to do is make sure Vim loads it:
 
 Vim 8+:
 
@@ -22,8 +34,7 @@ Vim 7 and older:
 
 ## Configuration
 
-Shitespace is on by default. Copy and modify these to your `~/.vimrc` to tweak
-how Shitespace works:
+Copy and modify these default values to your `~/.vimrc` to tweak how Shitespace works:
 
     let g:shitespaceDefaultOn = 1
     let g:shitespaceColor = 'red'
