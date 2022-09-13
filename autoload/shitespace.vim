@@ -15,18 +15,18 @@ else
 	let s:matchpat = '/\s\+$\| \+\ze\t/'
 endif
 
+let s:matchcmd = 'match ExtraWhitespace ' . s:matchpat
+let s:hlcmd = 'hi ExtraWhitespace term=reverse ctermbg=' . s:color . ' guibg=' . s:color
 let s:on = 0
 function! shitespace#Toggle()
 	let s:on = !s:on
 	if s:on
-		let l:matchcmd = 'match ExtraWhitespace ' . s:matchpat
-		let l:hlcmd = 'hi ExtraWhitespace term=reverse ctermbg=' . s:color . ' guibg=' . s:color
-		exe l:hlcmd
+		exe s:hlcmd
 		aug Shitespace
 			" If the user changes the colorscheme while Shitespace is on, keep
 			" highlights.
-			exe 'autocmd ColorScheme * ' . l:hlcmd
-			exe 'autocmd BufEnter,WinEnter * ' . l:matchcmd
+			exe 'autocmd ColorScheme * ' . s:hlcmd
+			exe 'autocmd BufEnter,WinEnter * ' . s:matchcmd
 		aug END
 	else
 		hi clear ExtraWhitespace
