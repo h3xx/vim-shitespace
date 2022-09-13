@@ -33,7 +33,7 @@
 "
 " Updated: 2021-01-18
 " Version: 0.1.0
-" Source:  TODO
+" Source:  https://github.com/h3xx/vim-shitespace
 " Project: https://github.com/h3xx/vim-shitespace
 " Author:  Dan Church [ h3xx{azzat}gmx{dizzot}com; h3xx@GitHub ]
 " License: GPLv3 (http://www.gnu.org/licenses/gpl.html)
