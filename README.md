@@ -24,48 +24,64 @@ in a place where Vim will load it:
 
 Vim 8+:
 
-    mkdir -p ~/.vim/pack/dist/start
-    git clone https://github.com/h3xx/vim-shitespace.git ~/.vim/pack/dist/start/vim-shitespace
+```sh
+mkdir -p ~/.vim/pack/dist/start
+git clone https://github.com/h3xx/vim-shitespace.git ~/.vim/pack/dist/start/vim-shitespace
+```
 
 Vim 7 and older:
 
-    mkdir -p ~/.vim/plugin
-    wget -O ~/.vim/plugin/shitespace.vim https://raw.githubusercontent.com/h3xx/vim-shitespace/main/plugin/shitespace.vim
+```sh
+mkdir -p ~/.vim/plugin
+wget -O ~/.vim/plugin/shitespace.vim https://raw.githubusercontent.com/h3xx/vim-shitespace/main/plugin/shitespace.vim
+```
 
 ## Configuration
 
 Copy and modify these default values to your `~/.vimrc` to tweak how Shitespace
 works:
 
-    let g:shitespaceDefaultOn = 1
-    let g:shitespaceColor = 'red'
-    let g:shitespaceMatch = '/\s\+$\| \+\ze\t/'
+```vim
+let g:shitespaceDefaultOn = 1
+let g:shitespaceColor = 'red'
+let g:shitespaceMatch = '/\s\+$\| \+\ze\t/'
+```
 
 ## Configuration Cookbook
 
 If you don't want Shitespace on by default, instead activating it with a
 keystroke:
 
-    let g:shitespaceDefaultOn = 0
-    let g:shitespaceShortcut = '<F5>'
+```vim
+let g:shitespaceDefaultOn = 0
+let g:shitespaceShortcut = '<F5>'
+```
 
 ## Alternate Regexes
 
 If you don't like mixed spaces-and-tabs, stick this in your ~/.vimrc:
 
-    let g:shitespaceMatch = '/\s\+$\| \+\t\+\|\t\+ \+/'
+```vim
+let g:shitespaceMatch = '/\s\+$\| \+\t\+\|\t\+ \+/'
+```
 
 If you don't like tabs used to indent (but they're okay elsewhere in the line):
 
-    let g:shitespaceMatch = '/\s\+$\|^\t\+/'
+```vim
+let g:shitespaceMatch = '/\s\+$\|^\t\+/'
+```
 
 If you don't like spaces used to indent:
 
-    let g:shitespaceMatch = '/\s\+$\|^ \+/'
+```vim
+let g:shitespaceMatch = '/\s\+$\|^ \+/'
+```
 
 If you don't like tabs AT ALL:
 
-    let g:shitespaceMatch = '/\s\+$\|\t\+/'
+```vim
+let g:shitespaceMatch = '/\s\+$\|\t\+/'
+```
 
 ## Contributing
 
