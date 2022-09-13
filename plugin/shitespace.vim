@@ -32,7 +32,7 @@
 " let g:shitespaceMatch = '/\s\+$\| \+\t\+\|\t\+ \+/'
 "
 " Updated: 2022-09-13
-" Version: 0.1.0
+" Version: 0.2.0
 " Source:  https://github.com/h3xx/vim-shitespace
 " Project: https://github.com/h3xx/vim-shitespace
 " Author:  Dan Church [ h3xx{azzat}gmx{dizzot}com; h3xx@GitHub ]
